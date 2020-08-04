@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background: url(../images/STREAMIN-KING-cujo.jpg);
+	background-size:auto;
+	font-family: 'Oswald', sans-serif;
+}
+
+#container {
+	background:#900;
+	width: 512px;
+	padding: 12px;
+	color: #FFF1D9
+}
+
+h1 {
+	font-size: 64px;
+}
+
+h2 {
+	font-size: 36px;
+	text-align:end;
+	background: #FFF1D9;
+	color:#000000;
+	padding: 8px;
+}
+
+p {
+	font-family: 'Mulish', sans-serif;
+}
+
+a {
+	color:	#000000;
+	text-decoration:none;
+}
