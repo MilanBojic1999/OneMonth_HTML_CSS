@@ -125,3 +125,26 @@ strong {
 	text-align:center;	
 }
 
+
+@media only screen and (max-device-width: 600px) {
+
+	.container {
+		width: 100%;
+	}
+	
+	
+	.middle section{
+		width:100%;
+		padding: 1.5rem;
+	}
+
+	.center {
+  		margin: 0 auto 0 auto;
+		display:block;
+		width: 75%;
+	}
+
+	.middle img {
+		width: 100%;
+	}
+}
