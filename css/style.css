@@ -139,10 +139,19 @@ strong {
 	background: #F5FAFC;
 	color: #003A52;
 }
+.serbiawinds{
+	text-align: justify; 
+	border-left:none;
+	border-right:none;
+}
+.serbiawinds p{
+	padding: 1rem;
+}
 
 .serbiawinds h2{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 2.5rem;
+	padding: 0.8rem;
 }
 
 
