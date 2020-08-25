@@ -1,127 +1,188 @@
-/* 
-Project Name: Monthly Resolutions
-Client: One Month
-Author: Christopher Castig | @castig
-*/
+@charset "utf-8";
+/* General Designe */
 
-
-/*----------------------------------------------------------------------------- 
-01=BASE   
------------------------------------------------------------------------------*/
-
-/* Box Model Hack */
 * {
-     -moz-box-sizing: border-box; /* Firexfox */
-     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
-     box-sizing: border-box; /* IE */
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
 }
 
-.clear {
-	clear: both;
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 body {
-	background:url(../images/notebook.png); 
-	color: #000000;
- 	font-family: 'Lato', sans-serif;
- 	line-height: 1.7; /* line-height is unit-less */
- 	font-size: 100%;
-	width: 1000px;
-	margin: 0 auto 0 auto;
-	padding: 0 150px 0 150px;
-	line-height: 25px;
-	
+	background:url(../image/blured-background.jpg);
+	background-size:cover;
+	background-position:center;
+	background-attachment:fixed;
+	cursor:default;
 }
 
-.subtext {
-	color:#C0C0C0;
-}
-
-.round {
-	border-radius: 50%;
-}
-
-#header{
-	padding: 40px 0 15px 0;
-}
-
-p{
-	margin:0;
+p {
+	font-family: 'Alata', sans-serif;
+	line-height: 1.25rem;
 }
 
 h1 {
-	margin:0;
-}
-
-#main {
-	float:left;
-	background:#FFFFFF;
-	padding-right: 40px;
-}
-
-#sidebar {
-	float:left;
-	background:#FFFFFF;
-	width: 300px;
-	margin: 0 0 0 10px;
-	padding: 20px;
-	padding-bottom: 40px;
-}
-
-a {
-	color:#FF9900;
-	text-decoration:none;
+	font-family: 'Poppins', sans-serif;
+	font-size: 3rem;
+	padding: 1.5rem;
 	font-weight:bold;
 }
 
-#sidebar ul {
-	margin: 20px;
+h2 {
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.90rem;
+	padding:0.65rem;
 }
 
-#sidebar blockquote{
-	border-left: 4px solid #CCC;
-  	padding-left: 8px;
-	margin: 0 10px 0 0;
+a {
+	color: #1E1E24;
+	text-decoration:none;
+	cursor:pointer;
 }
 
-#quote {
-	font-style:italic;
+strong {
+	font-weight:bold;
 }
 
-#sidebar h3 {
-	color:#111111;
-	margin-top: 40px;
+.left {
+	float:left;
+}
+
+.right {
+	float: right;
+}
+
+.center {
+  
+}
+
+.centralalign {
+	text-align:center;	
+}
+
+.parallax {
+  /* The image used */
+  background-image: url(../image/windmap.PNG);
+
+  /* Set a specific height */
+  /*height: 200px;*/
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
-.part {
-	padding: 40px 10px 40px 10px;
-	width:inherit;
-
-}
-
-.part hr {
-	color:#C0C0C0;
-	width:inherit;
-}
-
-.part p {
-	font-size: 90%;
-}
-
-#container {
+.container {
 	width: 1000px;
+	margin: 0 auto 0 auto;
+	padding-top: 3rem;
+	padding-bottom: 3rem; 
 }
 
-#container h3{
-	margin: 0,0,0,0;
+.container section {
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
 }
-/*----------------------------------------------------------------------------- 
-02=LAYOUT  
------------------------------------------------------------------------------*/
 
-/*----------------------------------------------------------------------------- 
-03=MAIN  
------------------------------------------------------------------------------*/
+.container .redborder{
+	border-right: 7.5px solid #92140C;
+}
+
+.container .redborder:nth-child(even){
+	border-left: 7.5px solid #92140C;
+	border-right: none;
+}
+
+.header {
+	text-align:center;
+	margin-bottom: 1rem;
+}
+
+.header img{
+	width:100%;
+	height:26%;
+	object-fit: cover;
+}
+
+.intro {
+	background: #0075A2;
+	text-align: justify;
+	padding: 1rem;
+	margin-bottom: 7px;
+	color: #EDF6F9;
+}
+
+.middle{
+	width: 100%;
+	text-align:justify;
+}
+
+.middle img{
+	width: 30%;
+	object-fit: cover;
+	padding: 3px;
+	padding-top: 4rem;
+}
+
+.middle section{
+	width: 70%;
+	border-left:none;
+	border-right:none;
+	padding: 5px;
+}
 
 
+.windfarm{
+	padding: 1rem;
+	text-align: justify;  
+	background: #F5FAFC;
+	color: #003A52;
+}
+.serbiawinds{
+	text-align: justify; 
+	border-left:none;
+	border-right:none;
+}
+.serbiawinds p{
+	padding: 1rem;
+}
+
+.serbiawinds h2{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 2.5rem;
+	padding: 0.8rem;
+}
+
+
+@media only screen and (max-device-width: 600px) {
+
+	.container {
+		width: 100%;
+		padding-top: 1rem;
+		padding-bottom: 1rem; 
+	}
+	
+	
+	.middle section{
+		width:100%;
+		padding: 1.5rem;
+	}
+
+	.center {
+  		margin: 0 auto 0 auto;
+		display:block;
+		width: 75%;
+	}
+
+	.middle img {
+		width: 100%;
+	}
+}
